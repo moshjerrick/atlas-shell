@@ -1,4 +1,5 @@
 #!/bin/bash
-find . -type d -exec chmod ugo+rx {} \;
+sudo find . -type d -exec chmod ugo=+x {} \;
+
 
 
