@@ -1,2 +1,2 @@
 #!/bin/bash
-printf . | printenv | ls -var
+ls -var printf printenv
