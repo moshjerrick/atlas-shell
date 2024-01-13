@@ -1,2 +1,2 @@
 #!/bin/bash
-find .. -type d ! -name ':' +1 | wc -l
+find . ":" | wc -l
