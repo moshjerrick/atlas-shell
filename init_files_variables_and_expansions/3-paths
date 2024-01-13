@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "$path_var" | tr -cd ':' | wc -l
+find .. -type d ! -name ':' | wc -l
