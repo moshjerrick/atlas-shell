@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+#Wrting best school with the with loop
+#!/bin/bash
+while [ "$count" -lt 10 ]; do
+    echo "Best School"
+    ((count++))
+done
+
