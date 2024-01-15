@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#this is stuff and also its things
+for LIST in {1..10}; do echo "Best School"; done
+
