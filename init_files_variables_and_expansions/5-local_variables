@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -var printf printenv
+cat <(set) <(printenv) <(declare -F) 
