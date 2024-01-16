@@ -1,22 +1,20 @@
 #!/usr/bin/env bash
-#more similar loops
-count=1
-
-while [ $count -le 20 ]; do
-    case $count in
-        4)
-            echo "$count and then bad luck from China"
+#using the while loop again
+i=0
+while [ $i -le 19 ];
+do
+i=$(( i+1 ))
+    case $i in
+        4) echo "4"
+           echo "bad luck from China"
+           ;;
+        9) echo "9"
+           echo "bad luck from Japan"
+           ;;
+        17) echo "17"
+            echo "bad luck from Italy"
             ;;
-        9)
-            echo "$count and then bad luck from Japan"
-            ;;
-        17)
-            echo "$count and then bad luck from Italy"
-            ;;
-        *)
-            echo $count
-            ;;
+        $i) echo $i
+        ;;
     esac
-    ((count++))
-done
-
+    done
