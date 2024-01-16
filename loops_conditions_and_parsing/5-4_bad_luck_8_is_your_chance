@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+#looping in and out
 count=1
 
 while [ $count -le 10 ]; do
