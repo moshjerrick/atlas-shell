@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+#Display numbers from 1 to 100, and display FizzBuzz when the number is a m\
+ultiple of 3 and 5; display Fizz when the number is multiple of 3; display \
+Buzz when the number is a multiple of 5; and otherwise, display the number
+for i in {1..100}
+do
+        j=$(( i%3 ))
+        k=$(( i%5 ))
+        if [ $j -eq 0 ] && [ $k -eq 0 ]
+        then
+                echo "FizzBuzz"
+        elif [ $j -eq 0 ]
+        then
+                echo "Fizz"
+        elif [ $k -eq 0 ]
+        then
+                echo "Buzz"
+        else
+                echo $i
+        fi
+        i=$(( i+1 ))
+done
